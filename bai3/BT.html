@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #khungvien {
+            margin: 0 auto;
+            background-color: chocolate;
+            border: 1px solid rgb(11, 216, 243);
+            border-radius: 5%;
+            width: 300px;
+            height: 400px;
+            box-shadow: 5px 5px black;
+        }
+
+        img {
+            width: 100%;
+            background-color: coral;
+            border: 1px solid rgb(13, 229, 13);
+            border-radius: 50%;
+        }
+
+        .chuindamblue {
+            font-weight: bold;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            color: blue;
+            list-style: none;
+            text-align: center;
+        }
+
+        .tieude {
+            font-weight: bold;
+            font-size: xx-large;
+            font-family: Arial, sans-serif;
+            color: crimson;
+            list-style: none;
+            text-align: center;
+        }
+
+        .tieude::before {
+            content: "Hello ";
+        }
+
+        .chuindamblue::first-letter{
+            font-size: 1,5em;
+            font-weight: bold;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="tieude">Xin chào</h1>
+    <div id="khungvien">
+        <img src="../Image/hhhh.jpg"/>
+        <ul>
+            <li class="tieude">Ăn cơm gà đi nào</li>
+            <li class="chuindamblue">Cơm không có gà</li>
+            <li class="chuindamblue">Cơm gà</li>
+            <li class="chuindamblue">Gà không có cơm</li>
+        </ul>
+    </div>
+</body>
+</html>

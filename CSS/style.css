@@ -1,0 +1,70 @@
+
+#layout{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: aqua;
+    color: coral;
+}
+
+.A{
+    color:blue;
+    background-color: brown;
+}
+
+.B1{ 
+    text-align: center;
+    padding: auto;
+}
+
+#B2{
+    background-color:chartreuse ;
+    font-size: xx-large;
+    font:600;
+}
+
+.B2{
+    background-color: blueviolet;
+    font-size: x-large;
+    font: 700;
+}
+.B3{
+    background-color: burlywood;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#khungvien{
+    margin: 0 auto;
+    background-color: chocolate;
+    border: rgb(11, 216, 243);
+    border-radius: 5%;
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px black;
+}
+
+img{
+    width: 100%;
+    background-color: coral;
+    border: rgb(13, 229, 13);
+    border-radius: 50%;
+}
+
+.chuindamblue{
+    font: bold;
+    color: blue;
+    list-style: none;
+    text-align: center;
+}
+
+.tieude{
+    font: bold;
+    color: crimson;
+    font-size: xx-large;
+    list-style: none;
+    text-align: center;
+}
+
+.tieude::before{
+    content: Hello;
+}

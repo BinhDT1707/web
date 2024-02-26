@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Box{
+            background-color: aliceblue;
+            margin: 0 auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .title{
+            display: flex;
+            font-style: normal;
+            font-size: larger;
+            color: brown;
+            justify-content: center;
+        }
+
+        .ForgotPassword{
+            display: block;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box">
+    <span class="title"><h1>Login Form</h1></span>
+    <form action="/submit-form" method="post">
+        <div>
+            <label for="Username">Username: </label>
+            <input type="text" id="Username" name="Username">
+        </div>
+        
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password">
+        </div>
+
+        <div>
+            <a href="" class="ForgotPassword">Forgot Password</a>
+            <input type="submit" value="Login">
+        </div>
+        
+        <div>
+            <a href="Register Form">Register Form</Form></label>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

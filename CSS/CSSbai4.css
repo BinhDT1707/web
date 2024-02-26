@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* xác định cách tính toán kích thước của một phần tử */
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#header>.header-left {
+    float: left;
+}
+
+#header>.header-right {
+    display: flex;
+    /* Sử dụng flexbox */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    /* TODO */
+    padding: 12px;
+    float: right;
+}
+
+.header-right a {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.header-right a:hover {
+    background-color: red;
+    color: white;
+}
+
+.header-right a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#content {
+    min-height: 300px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#header>.header-left{
+    opacity: 0.3;
+}

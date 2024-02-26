@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aliceblue;
+            margin: 0 auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black ;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-item {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Register Form</h1>
+        <form action="/submit-form" method="post">
+            <div class="form-item">
+                <label for="Full Name">Full Name:</label>
+                <input type="text" id="Full Name" name="Full Name" placeholder="Full Name">
+            </div>
+
+            <div class="form-item">
+                <label for="Phone number">Phone number:</label>
+                <input type="tel" id="Phone number" name="Phone number" placeholder="Phone number">
+            </div>
+
+            <div class="form-item">
+                <label for="Adress">Adress:</label>
+                <input type="text" id="Adress" name="Adress" placeholder="Adress">
+            </div>
+
+            <div class="form-item">
+                <label for="Avatar">Avatar</label>
+                <input type="file" id="Avatar" name="Avatar">
+            </div>
+
+            <div class="form-item">
+                <label for="Date of Birth">Date of Birth</label>
+                <input type="date" id="Date of Birth" name="Date of Birth">
+            </div>
+
+            <div class="form-item">
+                <label for="User name">User name</label>
+                <input type="text" id="User name" name="User name">
+            </div>
+
+            <div class="form-item">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password">
+            </div>
+
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

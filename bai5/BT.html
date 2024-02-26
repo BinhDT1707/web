@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* Media Query cho màn hình desktop */
+    @media (min-width: 1024px) {
+        .flex-layout{
+            display: flex;
+            background-color: cyan;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .box-layout{
+            width: 200px;
+            height: 240px;
+            background-color: darkred;
+            margin: 20px;
+            font-size: 35px;
+        }
+    }
+    
+    /* Media Query cho màn hình tablet */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .flex-layout{
+            display: flex;
+            background-color: cyan;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .box-layout{
+            width: 200px;
+            height: 240px;
+            background-color: darkred;
+            margin: 20px;
+            font-size: 35px;
+        }
+    }
+
+    /* Media Query cho màn hình mobile */
+    @media (max-width: 767px) {
+        .flex-layout{
+            display: flex;
+            background-color: cyan;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .box-layout{
+            width: 200px;
+            height: 240px;
+            background-color: darkred;
+            margin: 20px;
+            font-size: 35px;
+        }
+    }
+    </style>
+</head>
+<body>
+     <div class="flex-layout">
+        <div class="box-layout">Box 1</div>
+        <div class="box-layout">Box 2</div>
+        <div class="box-layout">Box 3</div> 
+        <div class="box-layout">Box 5</div>
+        <div class="box-layout">Box 6</div>
+        <div class="box-layout">Box 7</div>
+        <div class="box-layout">Box 8</div>
+        <div class="box-layout">Box 9</div>
+    </div>
+</body>
+</html>

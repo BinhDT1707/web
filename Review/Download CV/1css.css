@@ -1,0 +1,161 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box; > tính toán kích thước của phần tử đó bao gồm cả border và padding */
+  }
+  
+  /* Basic styling */
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    /* giữ cố định khi cuộn trang */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #header .logo h1 {
+    font-size: 24px;
+    color: wheat;
+  }
+  
+  #header ul li {
+    /* hiển thị trên cùng một hàng */
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  #header ul li a {
+    /* liên kết sẽ loại bỏ gạch chân: */
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+  
+    /* Thêm background image cho section home */
+    background-image: url('../images/bg.jpg');
+    /* hình nền sẽ phủ toàn bộ phần tử mà không bị làm mất tỉ lệ */
+    background-size: cover;
+    /* đặt hình ảnh nền ở giữa */
+    background-position: center;
+  
+    /* Chiều cao bằng 92 màn hình */
+    height: 92vh;
+  }
+  
+  /* Thiết lập kiểu dáng cho phần nội dung trong home section */
+  .home-content {
+    color: #fff;
+  }
+  
+  .home-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 38px;
+    margin-bottom: 30px;
+    background-color: white;
+    color: #14B789;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  /* Thiết lập style cho button */
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Thiết lập trung tâm cho card-section */
+  #card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Style cho card */
+  .card {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+  }
+  
+  #about-section {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    line-height: 2;
+    padding: 30px;
+  }
+  
+  .about-left {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-left img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+  }
+  
+  .about-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  
+  .about-right li {
+    margin-left: 30px;
+  }
+  
+  #footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
